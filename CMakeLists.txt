@@ -25,7 +25,7 @@ if (NOT PICO_BOARD STREQUAL "pico" AND NOT PICO_BOARD STREQUAL "picow")
 endif ()
 
 # Include Pico SDK
-include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 include(${FREERTOS_SRC_DIRECTORY}/portable/ThirdParty/GCC/RP2040/FreeRTOS_Kernel_import.cmake)
 
 if (PICO_SDK_VERSION_STRING VERSION_LESS "1.4.0")
